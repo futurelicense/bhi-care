@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BHI-CARE | Care Operations</title>
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/gate.css">
+<div id="gate"></div>
+<div id="workspace" hidden>
+  <div class="layout">
+    <aside>
+      <div class="brand"><span class="logo">BHI</span>BHI-CARE</div>
+      <nav id="nav"></nav>
+    </aside>
+    <div>
+      <header>
+        <div><strong>Behavioral health workspace</strong> <span class="tag">Synthetic</span> <strong id="who"></strong></div>
+        <div class="row">
+          <button type="button" class="btn alt" data-act="start-tour">Tour</button>
+          <button type="button" class="btn alt" data-act="sign-out">Sign out</button>
+          <label for="role">Role</label>
+          <select id="role" disabled></select>
+        </div>
+      </header>
+      <main id="app"></main>
+    </div>
+  </div>
+</div>
+<script src="/app.js"></script>
